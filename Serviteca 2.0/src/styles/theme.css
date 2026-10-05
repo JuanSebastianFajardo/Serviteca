@@ -1,0 +1,70 @@
+/* ============================================================
+   Serviteca ADSO – Variables globales de diseño
+   Lienzo de referencia: 1366 × 768 px
+   ============================================================ */
+
+:root {
+  /* --- Colores --- */
+  --color-primary:   #2E7D32; /* verde – menús, botones principales */
+  --color-secondary: #8B3A1E; /* caoba – bordes, encabezados de tabla, títulos */
+  --color-bg:        #F0F0F0; /* fondo general */
+  --color-white:     #FFFFFF; /* texto sobre verde o caoba */
+  --color-text:      #212121; /* texto principal */
+  --color-error:     #C62828; /* mensajes de error */
+  --color-overlay:   rgba(0, 0, 0, 0.50); /* fondo de modales */
+
+  /* --- Tipografía --- */
+  --font-main: 'Times New Roman', Times, serif;
+
+  /* --- Espaciados comunes --- */
+  --radius:   6px;
+  --shadow:   0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+/* ============================================================
+   Reset mínimo
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  min-height: 768px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ============================================================
+   Utilidades globales
+   ============================================================ */
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  padding: 8px 20px;
+  font-size: 15px;
+  transition: opacity 0.15s ease;
+}
+
+button:hover { opacity: 0.88; }
+
+input, select {
+  font-family: var(--font-main);
+  font-size: 15px;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  cursor: pointer;
+}
